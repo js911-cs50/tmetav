@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TMAV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">
+      <img src="TMAV_Logo_White.png" alt="TMAV Logo" class="logo">
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sub-teams.html">Sub-Teams</a>
+      <a href="sponsors.html">Sponsors</a>
+      <a href="join.html">Join Us</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="page-hero">
+      <span class="status-badge">Reach Out</span>
+      <h1>Contact TMAV</h1>
+      <p class="hero-description">
+        Whether you're interested in sponsorship, interested in joining the team, or have general technical inquiries, we'd love to connect.
+      </p>
+    </section>
+
+    <section class="section-container contact-layout">
+      
+      <div class="contact-form-wrapper">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-intro">Have questions or looking to collaborate? Send us a message below.</p>
+        
+        <form class="contact-form" action="https://formspree.io/f/xyegpazl" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject / Inquiry Topic" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <div class="recaptcha-wrapper">
+            <div class="g-recaptcha" data-sitekey="6LfykYQtAAAAAMopSbkIXUX_MHKCfZl-IRLQNlmm" data-theme="dark"></div>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info-wrapper">
+        <div class="info-card">
+          <h3>Workshop Location</h3>
+          <p><strong>Toronto Metropolitan University</strong></p>
+          <p>350 Victoria St, Toronto, ON M5B 2K3</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Our Location</h3>
+        <p>Toronto Metropolitan University</p>
+        <p>350 Victoria St, Toronto, ON M5B 2K3</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sub-teams.html">Technical Sub-Teams</a></li>
+          <li><a href="sponsors.html">Sponsorship Package</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/tmetaerialvehicles/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://discord.gg/zynGDXK9nb" target="_blank" rel="noopener">Discord</a>
+          <a href="https://www.linkedin.com/in/tmav-toronto-metropolitan-aerial-vehicles-535143412/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.facebook.com/tmetaerialvehicles/" target="_blank" rel="noopener">Facebook</a>
+          <a href="mailto:ruav@torontomu.ca">Email Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Toronto Metropolitan Aerial Vehicles. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
