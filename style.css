@@ -957,23 +957,6 @@ p {
   color: #aaa;
 }
 
-@media (max-width: 768px) {
-  .mission-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-  .mission-text-container h2 {
-    text-align: center;
-  }
-  .partner-card {
-    max-width: 100%;
-  }
-  .gold-card, .silver-card, .bronze-card {
-    width: 100%;
-    max-width: 280px;
-  }
-}
-
 .tmu-card {
   background-color: #161b22;
   border: 1px solid #30363d;
@@ -1020,48 +1003,6 @@ p {
 .tmu-btn:hover {
   background-color: #388bfd;
   transform: translateY(-1px);
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 18px;
-  }
-
-  .page-hero h1 {
-    font-size: 2rem;
-  }
-
-  .section-container {
-    padding: 20px 15px;
-  }
-
-  .tmu-card {
-    padding: 25px 16px;
-    margin: 20px 10px;
-  }
-
-  .tmu-btn {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    gap: 24px;
-    text-align: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
 }
 
 .nav-toggle {
@@ -1116,25 +1057,81 @@ p {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+  }
+
   .nav-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links {
     position: absolute;
-    top: 100%;
+    top: 80px;
     left: 0;
     width: 100%;
-    background-color: #0b0f19;
+    background-color: #111827;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 0;
     gap: 1.25rem;
     display: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #1f2937;
   }
 
   .nav-links.active {
     display: flex;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-container {
+    padding: 20px 15px;
+  }
+
+  .tmu-card {
+    padding: 25px 16px;
+    margin: 20px 10px;
+  }
+
+  .tmu-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .mission-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text-container h2 {
+    text-align: center;
+  }
+
+  .partner-card {
+    max-width: 100%;
+  }
+
+  .gold-card, .silver-card, .bronze-card {
+    width: 100%;
+    max-width: 280px;
   }
 }
