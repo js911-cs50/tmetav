@@ -4,21 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Us | TMAV</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
   <header class="navbar">
     <div class="navbar-brand">
-      <img src="TMAV_Logo_White.png" alt="TMAV Logo" class="logo">
+      <img src="/TMAV_Logo_White.png" alt="TMAV Logo" class="logo">
     </div>
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="sub-teams.html">Sub-Teams</a>
-      <a href="sponsors.html">Sponsors</a>
-      <a href="join.html" class="active">Join Us</a>
-      <a href="contact.html">Contact</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/sub-teams">Sub-Teams</a>
+      <a href="/sponsors">Sponsors</a>
+      <a href="/join" class="active">Join Us</a>
+      <a href="/contact">Contact</a>
     </nav>
   </header>
 
@@ -54,11 +59,11 @@
       <div class="footer-col">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="sub-teams.html">Technical Sub-Teams</a></li>
-          <li><a href="sponsors.html">Sponsorship Package</a></li>
-          <li><a href="join.html">Join Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/sub-teams">Technical Sub-Teams</a></li>
+          <li><a href="/sponsors">Sponsorship Package</a></li>
+          <li><a href="/join">Join Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
         </ul>
       </div>
 
@@ -77,5 +82,17 @@
       <p>© 2026 Toronto Metropolitan Aerial Vehicles. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>
